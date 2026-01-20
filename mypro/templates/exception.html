@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Exception - My Website{% endblock %}
+
+{% block content %}
+    <div class="row" style="background-color: red;color: white;text-align: center;margin-bottom: 20px;">
+        <div class="col-sm-12">
+            <h1>Exception Occurred : </h1>
+        </div>
+    </div>    
+    <div class="row" style="margin-bottom: 6px;">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <p>{{ exception }}</p>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>   
+{% endblock %}
